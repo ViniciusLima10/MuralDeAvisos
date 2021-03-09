@@ -14,8 +14,9 @@ function updatePosts() {
         posts.forEach((post) => {
             postElement = `
             <div id=${post.id} class="card mb-4">
-                <div class="card-header">
+                <div class="card-header d-flex justify-content-between">
                     <h5 class="card-title">${post.title}</h5>
+                    <button class="btn" onclick="console.log(${post.id})"><img src="./assets/x.svg"></button> 
                 </div>
                 <div class="card-body">
                     <div class="card-text">${post.description}</div>
